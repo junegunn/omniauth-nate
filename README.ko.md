@@ -5,6 +5,10 @@ Nate를 위한 omniauth strategy입니다. Nate/Cyworld/Empas 계정을 이용�
 
 http://www.nate.com
 
+Nate의 인증 API는 OAuth 1.0를 따릅니다.
+
+http://devsquare.nate.com/openApi/nateAuthAPIGuide
+
 설치
 ----
 

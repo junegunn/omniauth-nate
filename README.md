@@ -6,6 +6,10 @@ This allows users to authenticate themselves with their Nate/Cyworld/Empas accou
 
 http://www.nate.com
 
+Nate Open Authentication API follows OAuth 1.0 protocol.
+
+http://devsquare.nate.com/openApi/nateAuthAPIGuide
+
 Installation
 ------------
 
