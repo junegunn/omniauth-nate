@@ -1,35 +1,35 @@
 omniauth-nate
 =============
 
-Omniauth strategy for a Korean web portal nate.com which is a conglomerate of Nate, Cyworld and Empas.
-This allows users to authenticate themselves with their Nate/Cyworld/Empas accounts.
+Nate를 위한 omniauth strategy입니다. Nate/Cyworld/Empas 계정을 이용한 인증이 가능하도록 합니다.
 
 http://www.nate.com
 
-Installation
-------------
+설치
+----
 
-Add to your Gemfile
+Gemfile 에 추가 후,
 
 ```ruby
 gem 'omniauth-nate'
 ```
 
-Then `bundle install`
+`bundle install`
 
-How to use
-----------
+사용 절차
+---------
 
-Register your application in the following page to obtain consumer key and secret.
+Nate의 devsquare에서 consumer key를 발급 받습니다.
 
 http://devsquare.nate.com/
 
-In the confirmation mail, you will additionally receive encryption key and IV required
-to decrypt the member information retrieved via their `GetNateMemberInfo` API.
+발급 확인 메일을 통해 `GetNateMemberInfo` API 의 결과를 복호화하는 필요한 
+encryption key와 IV를 함께 할당받게 됩니다.
 
 ### Usage
 
-Along with the usual consumer key and secret, encryption key must be specified.
+OAuth를 위한 consumer key, secret과 함께 발급 확인 메일을 통해 부여받은
+encryption key를 기재합니다.
 
 ```ruby
 Rails.application.config.middleware.use OmniAuth::Builder do
@@ -42,7 +42,7 @@ Rails.application.config.middleware.use OmniAuth::Builder do
 end
 ```
 
-### With Devise
+### Devise 에서의 설정
 
 ```ruby
 Devise.setup do |config|
@@ -58,7 +58,7 @@ end
 Authentication Hash
 -------------------
 
-Email address is used as the user identifier.
+이메일 주소가 User identifier로 사용됩니다.
 
 ```ruby
 {
