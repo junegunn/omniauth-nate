@@ -7,9 +7,9 @@ Gem::Specification.new do |s|
   s.version     = Omniauth::Nate::VERSION
   s.authors     = ["Junegunn Choi"]
   s.email       = ["junegunn.c@gmail.com"]
-  s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.homepage    = "https://github.com/junegunn/omniauth-nate"
+  s.summary     = %q{OmniAuth strategy for nate.com}
+  s.description = %q{OmniAuth strategy for nate.com (Korean web portal site which is a conglomerate of Nate, Cyworld and Empas)}
 
   s.rubyforge_project = "omniauth-nate"
 
@@ -21,4 +21,10 @@ Gem::Specification.new do |s|
   # specify any dependencies here; for example:
   # s.add_development_dependency "rspec"
   # s.add_runtime_dependency "rest-client"
+  s.add_development_dependency "rack-test"
+  s.add_development_dependency "mocha"
+  s.add_development_dependency "webmock"
+  s.add_runtime_dependency "omniauth-oauth", "~> 1.0"
+  s.add_runtime_dependency "multi_json"
+  s.add_runtime_dependency "insensitive_hash", ">= 0.1.0"
 end

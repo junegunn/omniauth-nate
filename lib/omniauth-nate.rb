@@ -1,7 +1,3 @@
-require "omniauth-nate/version"
+require 'omniauth-nate/version'
+require 'omniauth/strategies/nate'
 
-module Omniauth
-  module Nate
-    # Your code goes here...
-  end
-end
