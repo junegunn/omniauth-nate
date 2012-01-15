@@ -1,7 +1,7 @@
 omniauth-nate
 =============
 
-Nate를 위한 omniauth strategy입니다. Nate/Cyworld/Empas 계정을 이용한 인증이 가능하도록 합니다.
+네이트 인증을 위한 omniauth strategy입니다. 네이트/싸이월드/엠파스 계정을 이용한 인증이 가능하도록 합니다.
 
 http://www.nate.com
 
