@@ -1,8 +1,10 @@
 omniauth-nate
 =============
 
-Omniauth strategy for nate.com, a Korean web portal which is a conglomerate of Nate, Cyworld and Empas.
+Omniauth strategy for a Korean web portal nate.com which is a conglomerate of Nate, Cyworld and Empas.
 This allows users to authenticate themselves with their Nate/Cyworld/Empas accounts.
+
+http://www.nate.com
 
 Installation
 ------------
