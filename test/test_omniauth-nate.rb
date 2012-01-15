@@ -117,6 +117,7 @@ class OmniauthNateTest < Test::Unit::TestCase
     assert_equal @email, last_request.env['omniauth.auth']['uid']
     assert_equal @email, last_request.env['omniauth.auth']['info']['email']
     assert_equal @name,  last_request.env['omniauth.auth']['info']['name']
+    assert_equal Encoding::UTF_8, last_request.env['omniauth.auth']['info']['name'].encoding
   end
 
   def test_basic

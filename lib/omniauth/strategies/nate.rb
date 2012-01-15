@@ -65,7 +65,7 @@ module OmniAuth
         c.iv = options[:encryption][:iv]
         text = c.update(Base64.decode64 val)
         text << c.final
-        text
+        text.force_encoding("UTF-8")
       end
     end
   end
