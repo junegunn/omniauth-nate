@@ -26,5 +26,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency "webmock"
   s.add_runtime_dependency "omniauth-oauth", "~> 1.0"
   s.add_runtime_dependency "multi_json"
-  s.add_runtime_dependency "insensitive_hash", ">= 0.1.0"
+  s.add_runtime_dependency "insensitive_hash", "~> 0.2"
 end
